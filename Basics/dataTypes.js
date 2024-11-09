@@ -12,7 +12,7 @@ let zakir
 // Number -> Range 2 power 53
 // bigint
 // String -> ""  we can use both double quote as well as single quote
-// Boolean 
+// Boolean -> true/false
 // null -> StandAlone Value / No Value
 // Undefined -> Value not assigned
 // Symbol -> Unique
