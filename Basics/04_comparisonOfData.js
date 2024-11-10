@@ -21,3 +21,6 @@
 // console.log(undefined > 0); // false
 // console.log(undefined == 0); // false
 // console.log(undefined >= 0); // false
+
+// === -> It would compare the values as well as data types of the variables
+console.log("2" === 2);
