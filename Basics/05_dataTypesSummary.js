@@ -18,6 +18,9 @@ const bigNumber = 842497497389578583589n // By adding n we treat it as a BigInt
 // Reference (Non Primitive)
 // Array , Object , Function
 
+console.log(typeof null);
+
+
 // Array
 let myHeroes = ["Hanuman","Ram","Krishna"]; // Type -> Object
 
