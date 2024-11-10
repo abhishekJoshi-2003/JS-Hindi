@@ -35,3 +35,28 @@ let myObj = {  // Type -> Object
 const muFunction = function(){ // Type -> Function Object
     console.log("Hii");
 };
+
+/*******************************************MEMORY*********************************************************/
+
+// Two Types
+// Stack Memory (Primitive) -> Makes a copy when passed
+// Heap Memort (Non Primitive) -> Gives reference when passed
+
+let myEmail1 = "Joshi@gmail.com";
+let myEmail2 = myEmail1;
+
+myEmail2 = "Abhishek@gmail.com"
+
+console.log(myEmail1);
+console.log(myEmail2);
+
+let myObj2 = {
+    name: "Joshi",
+    age: 23
+};
+
+let myObj3 = myObj2;
+
+myObj3.age = 20;
+console.log(myObj2.age);
+console.log(myObj3.age);
