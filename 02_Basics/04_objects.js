@@ -46,3 +46,39 @@ console.log(Object.keys(instaUser)); // It will return all the keys in from of a
 console.log(Object.values(instaUser)); // It will return all the values in from of array
 console.log(Object.entries(instaUser)); // It will return all the elements of object in form of array of arrays in which each small array will contain key and value
 console.log(instaUser.hasOwnProperty('isLoggedIn')); // It will tell if the property in the ibject exist or not
+
+
+/***********************OBJECT DESTRUCTURE************************/
+
+const school = {
+    principle: "Jalamsingh Ji",
+    headTeacher: "Sitaram Ji",
+    mathsTeachet: "Dashrath Ji",
+    sanskritTeacher: "Dharmaram Ji"
+}
+
+//console.log(school.principle)
+
+//Destructure
+
+// const {principle} = school;
+// console.log(principle); // Jalamsingh Ji
+
+const {principle: princ} = school;
+console.log(princ); // Jalamsingh Ji
+
+/***************************APIS***************************/
+// The Response of all APIs is structured in JSON Format
+//JSON Format
+//{
+//          "name": "Joshi",
+//          "age": 23,
+//          "education": "B.Tech."
+// }
+
+//JSON Array
+// [
+//     {},
+//     {},
+//     {}
+// ]
