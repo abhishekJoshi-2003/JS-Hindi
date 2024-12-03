@@ -2,7 +2,7 @@
 // Way to define Function
 function sayMyName (){
     console.log("J")
-    console.log("O")
+    console.log("O") 
     console.log("S")
     console.log("H")
     console.log("I")
@@ -43,3 +43,13 @@ function loginMessage (username){
 // console.log(loginMessage("Joshi")); // Joshi just logged in
 console.log(loginMessage()); // If we do not paas any parameter then the place of parameter variable in function would be treated as Undefined
 
+
+function addToCart(...num1)
+{
+    return num1
+}
+
+function addCart(num1,num2,...num)
+{
+
+}
