@@ -37,7 +37,7 @@ JsUser.greeting = function(){
 
 // console.log(JsUser.greeting); // It is giving the reference to the function
 // console.log(JsUser.greeting()); // It will call the function
-JsUser.greeting();
+// JsUser.greeting();
 
 JsUser.greetingTwo = function(){
     console.log(`Hello JS User ${this.name}`); // This keyword corresponds to the current object

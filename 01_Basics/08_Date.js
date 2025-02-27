@@ -1,6 +1,6 @@
 // We will learn about Dates here 
 let myDate = new Date();
-// console.log(myDate); // It is not clearly Visible
+console.log(myDate); // It is not clearly Visible
 // console.log(myDate.toString()); // Tue Nov 12 2024 11:29:04 GMT+0000 (Coordinated Universal Time)
 // console.log(myDate.toDateString()); // Tue Nov 12 2024
 // console.log(myDate.toISOString()); // 2024-11-12T11:29:04.083Z
@@ -26,6 +26,6 @@ let newDate = new Date();
 // console.log(newDate.getDay());
 // console.log(newDate.getFullYear());
 
-newDate.toLocaleString('default',{
+console.log(newDate.toLocaleString('default',{
     weekday: 'long'
-})
+}))

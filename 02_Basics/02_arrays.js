@@ -12,10 +12,10 @@ let hinduGods = ["Hanuman","Ram","Krishna"]
 // console.log(allHeroes);
 
 // let allheroes = [1,2,3,[4,5,6],7,8,[9,10,[11,12,13]]]
-// let anotherArray = allheroes.flat(Infinity) // It will take infinity depth of the array allHeroes and then will take the elements of depth at depth 0
+// let anotherArray = allheroes.flat(Infinity); // It will take infinity depth of the array allHeroes and then will take the elements of depth at depth 0
 // console.log(anotherArray);
 
-// console.log(Array.isArray("Joshi")) //  It will tell whether the given vakue is array or not
+// console.log(Array.isArray("Joshi")) //  It will tell whether the given value is array or not
 // console.log(Array.from("Hitesh")) // It will detect the value and will try to make an array out of it
 // console.log(Array.from({name: "Joshi"})); // It will give empty array
 

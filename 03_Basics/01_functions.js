@@ -30,7 +30,7 @@ function addTwoNumbers (number1,number2){
 const result = addTwoNumbers(3,4)
 // console.log(result)
 
-function loginMessage (username){
+function loginMessage (username = "Sam"){ // Given a default parameter
     if(!username)
     {
         console.log("Enter a UserName");
@@ -44,12 +44,36 @@ function loginMessage (username){
 console.log(loginMessage()); // If we do not paas any parameter then the place of parameter variable in function would be treated as Undefined
 
 
-function addToCart(...num1)
+function addToCart(...num1) // Rest Operator which says that num1 denotes a number of values which the quantity is unkonwn
 {
-    return num1
+    return num1; // It would return in form of arrays
 }
 
 function addCart(num1,num2,...num)
 {
-
+    return num;// It would return all numbers other than num1 and num2
 }
+
+// console.log(addToCart(1,2,3,4)); // [1,2,3,4]
+// console.log(addCart(1,2,3,4)); // [3,4] 
+
+const User = {
+    username: "Balak",
+    price: 99
+}
+
+// When passing objects in function and accessing its elements we need to check for type safety
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+// handleObject(User);
+handleObject({
+    username: "Gandhi",
+    price: -1
+});
+
+const myArr = [100,200,300,400];
+function returnSecond(anyArr){
+    return anyArr[1];
+}
+console.log(returnSecond(myArr));

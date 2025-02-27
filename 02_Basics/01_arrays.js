@@ -19,8 +19,8 @@ let myArr2  = new Array(1,2,3,4,5)
 // console.log(myArr.includes(9)); // It simply tells true if the element is in array otherwise false
 // console.log(myArr.indexOf(3)); // If element is there it would give index of element otherwise -1
 
-const transArr = myArr.join() // It would join myArr into transArr into String format
-// console.log(myArr);
+const transArr = myHeroes.join() // It would join myArr into transArr into String format
+// console.log(myHeroes);
 // console.log(transArr);
 
 let myn1 = myArr.slice(1,3) // It will take myArr from index 1 to index 3(exclusive) and save in myn1 without modifying original array 
