@@ -1,0 +1,9 @@
+/************************************Javascript Execution Context****************************************/
+// Javascript is single threaded language 
+
+The execution contexts :-
+1) Global Execution Context -> First Execution Context
+2) Functional Execution Context
+3) Eval Execution Context
+
+The javascript code execution completes in 2 phases:-
