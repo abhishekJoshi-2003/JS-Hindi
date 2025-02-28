@@ -2,8 +2,42 @@
 // Javascript is single threaded language 
 
 The execution contexts :-
-1) Global Execution Context -> First Execution Context
+1) Global Execution Context -> First Execution Context and it is saved in this
 2) Functional Execution Context
 3) Eval Execution Context
 
 The javascript code execution completes in 2 phases:-
+1) Memory creation phase -> In it memory is allocated to variables
+2) Execution phase -> In it execution takes place.
+
+Code :-> 
+let num1 = 10;
+let num2 = 5;
+function addNum(val1,val2){
+    let total = val1+val2;
+    return total;
+}
+let result1 = addNum(num1,num2);
+let result2 = addNum(8,6);
+
+Code Process :->
+1) Global Execution -> Context assigned to this
+2) Memory Creation ->
+num1 <- undefined
+num2 <- undefined
+addNum <- definition
+result1 <- undefined
+result2 <- undefined
+
+3) Execution Phase ->
+num1 <- 10
+num2 <- 5
+addNum -> new Variable Environment  ->  1) Memory Creation     ->  2) Execution Phase   -> Execution Context Deleted
+                  +                        num1 <- undefined          val1 <- 10
+            Exection Thread                num2 <- undefined          val2 <- 5
+                                           total <- undefined         total <- 15(retuned)
+result1 <- 15
+result2 <- 14 (After performing the same as in line 35)
+
+
+// Call Stack
