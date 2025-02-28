@@ -41,3 +41,4 @@ result2 <- 14 (After performing the same as in line 35)
 
 
 // Call Stack
+It follows LIFO order and functions are put in the stack and executed accordingly.
