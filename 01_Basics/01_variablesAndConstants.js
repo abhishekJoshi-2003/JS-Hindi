@@ -4,7 +4,7 @@ var age = 10; //This is not a Good Approach
 friend = "Nandan" //This is also a way to declare variable but a very bad practise
 let known;
 //id = 1002 This is not allowed
-console.log("Id is" + id)
+console.log("Id is " + id)
 console.table([id,name,age,friend,known])
 
 /*
