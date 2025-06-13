@@ -39,6 +39,6 @@ let url = "http://Joshi.com/Joshi%20Coder"
 // To find a string into a string
 // console.log(url.includes('Abhishek'));
 
-// We cam split a string into array object on some basis
+// We can split a string into array object on some basis
 let st = "My Name is Abhishek Joshi"
 console.log(st.split(' ')); // It will split the string on the base of white spaces

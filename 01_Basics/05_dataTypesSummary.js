@@ -7,7 +7,7 @@ const val3 = "Joshi" // String
 const val4 = true // Boolean
 const val5 = Symbol('123') // Symbol
 const val6 = Symbol('123') // Symbol
-//val5 ans val6 are different
+//val5 and val6 are different
 console.log(val5 === val6);
 
 const val7 = null // null
@@ -32,9 +32,11 @@ let myObj = {  // Type -> Object
 
 // Function 
 
-const muFunction = function(){ // Type -> Function Object
+const myFunction = function(){ // Type -> Function Object
     console.log("Hii");
 };
+
+// console.log(typeof myHeroes + typeof myObj + typeof myFunction);
 
 /*******************************************MEMORY*********************************************************/
 
