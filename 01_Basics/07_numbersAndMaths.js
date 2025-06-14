@@ -17,7 +17,7 @@ const num3 = 12.876
 const num4 = 112.8859
 const num5 = 1345.9588
 // console.log(num3.toPrecision(3)); // 12.9 -> first three digits precision
-// console.log(num4.toPrecision(3)); // 112 -> first three digits precision
+// console.log(num4.toPrecision(3)); // 113 -> first three digits precision
 // console.log(num5.toPrecision(3)); // 1.35e+3 -> first three digits precision
 
 const num6 = 1000000

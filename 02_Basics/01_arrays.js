@@ -5,7 +5,7 @@
 
 let myArr = [0,1,2,3,4,5]
 let myHeroes = ["Ram","Krishna","Hanuman"]
-// console.log(myArr[0]);
+// console.log(myHeroes[0]);
 
 let myArr2  = new Array(1,2,3,4,5)
 
