@@ -41,7 +41,7 @@ function loginMessage (username = "Sam"){ // Given a default parameter
 }
 
 // console.log(loginMessage("Joshi")); // Joshi just logged in
-console.log(loginMessage()); // If we do not paas any parameter then the place of parameter variable in function would be treated as Undefined
+// console.log(loginMessage()); // If we do not paas any parameter then the place of parameter variable in function would be treated as Undefined
 
 
 function addToCart(...num1) // Rest Operator which says that num1 denotes a number of values which the quantity is unkonwn
@@ -66,7 +66,7 @@ const User = {
 function handleObject(anyObject){
     console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
 }
-// handleObject(User);
+handleObject(User);
 handleObject({
     username: "Gandhi",
     price: -1

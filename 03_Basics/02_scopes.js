@@ -10,9 +10,9 @@ if(true){
     // console.log("Inner:"+ a);   
 }
 
-// console.log(a); // It will print outer a
+console.log(a); // It will print outer a
 // console.log(b); // It will throw out of scope error
-// console.log(c); // It will print latest value of c
+console.log(c); // It will print latest value of c
 
 // The global scope while running with node and running with browser are different
 
@@ -26,7 +26,6 @@ function one(){
     }
     // console.log(website);// It will throw error as Parent can not access chile variables
     two();
-    
 }
 
 one();
