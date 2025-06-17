@@ -25,7 +25,7 @@ const toast = function(){
     // console.log(this.userName); // It will show Undefined as it is intended for objects not for functions
     //  console.log(this); // It would show a number of things related to function
 }
-// chai();
+// toast();
 
 const biscuit = () => { // This is function declaration using Arrow Operator
     let userName = "Me";

@@ -6,7 +6,7 @@
 (function chai(){
     // Named IIFE
     console.log("DB CONNECTED");
-})(); // We just wrap up the function in parenthesis and add a set of parenthesis after it and if we want to give a stopage to this function exwcution then we need to put a semi colon after function.
+})(); // We just wrap up the function in parenthesis and add a set of parenthesis after it and if we want to give a stopage to this function execution then we need to put a semi colon after function.
 
 ( () => {
     console.log("DB CONNECTED AGAIN");
