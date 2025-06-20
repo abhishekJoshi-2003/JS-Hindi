@@ -1,10 +1,10 @@
 // Array Specific Loops
-
+// forof loop works for the array , string and map but does not work for object
 // ["","",""]
 // [{},{},{}]
 
 // 1) for of
-// for (const element of object) {
+// for (const element of object) { here element denotes the member element of the entity
     
 // }
 
