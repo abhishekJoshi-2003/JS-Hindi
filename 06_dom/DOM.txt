@@ -1,0 +1,35 @@
+DOM -> Document Object Model
+
+--> This is the Modal which describes about the structure of the page. How a page woule look like.
+--> When we go to chrome inspect and write  
+    console.log(window); --> It would give a lot of information about the information that the wwindow is taking
+    console.log(window.document) or console.log(document) --> It would give documentary information
+    console.dir(document) --> It would give more detailed information
+
+Diagram of DOM of index.html:->
+     
+                                                Window 
+                                                  |
+                                                Document
+                                                  |
+                                                 HTML
+                                                /    \
+                                               /      \
+                                              /        \
+                                            Head       Body
+                                           /   /         \
+                                          /   /           \
+                                        meta title         \
+                                         /     /          div -- attribute
+                                        /     /           / \
+                                attribute  text node     /   \
+                                                        h1    p
+                                                        / \    \
+                                                       /   \    \
+                                                   attribute\   text node
+                                                             \
+                                                            text node
+
+--> In inspect console --
+    console.log(document.______) // when we replace _______ with the property of the document then we would get the information
+--> We can manipulate the DOM in some ways
