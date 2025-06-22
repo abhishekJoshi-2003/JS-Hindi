@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Joshi</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+      <div class="parent">
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">Thursday</div>
+      </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent); // It will log the whole parent class Element
+    // console.log(parent.children); // It will return a HTML Collection which would include all the children of parent class element
+    
+    // for (let index = 0; index < parent.children.length; index++) {
+    //     console.log(parent.children[index].innerHTML);
+    // }
+    
+    // parent.children[0].style.color = "orange"; // Changing style of some child of element
+    // console.log(parent.firstElementChild); // Gives first child element of Parent
+    // console.log(parent.lastElementChild); // Gives last child element of Parent
+
+    // Moving from child to parent 
+    // const dayOne = document.querySelector('.day');
+    // console.log(dayOne); // It would give element
+    // console.log(dayOne.parentElement); // It would give parent of the element 
+    // console.log(dayOne.nextElementSibling); // It would give next child of its parent
+
+    console.log("NODE:" , parent.childNodes); // It would give all the child nodes of parent element
+</script>
+</html>
