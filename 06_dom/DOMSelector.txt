@@ -1,0 +1,44 @@
+// The Selectors in DOM are as Under
+
+--> document.getElementById('title'); -> It would give the tag which has the id title.
+--> document.getElementById('title').id -> It would give id of the tag
+--> document.getElementById('title').class -> It would give undefined
+--> document.getElementById('title').className -> It would give class of that tag
+--> document.getElementById('title').getAttribute('id'); -> From it we can get any attribute of the tag we want
+--> document.getElementById('title').setAttribute('class','test heading'); // It will set test and heading to the class attribute of id title and this function overrides the valuw of attribute rather than adding attribute
+
+// We can alter style of tag in such a way
+const title = document.getElementById('title');
+title.style._______ = '' --> we can alter _______ style of title 
+title.style.backgroundColor = 'green'
+
+--> title.textContent; -> It would give the text content of the tag irrespective of its display property
+--> title.innerText; -> It would give the text content only that is visible on page
+--> title.innerHTML; -> It also gives the HTML tags inside the tag 
+
+// Query Selector
+document.querySelector('h1'); --> Selecting query based on tag 
+document.querySelector('#title'); --> Selecting query based on id 
+document.querySelector('.heading'); --> Selecting query based on class 
+document.querySelector('input[type:password]'); --> Selecting query based on tag and attribute
+document.querySelector('h2:first-child'); --> Selecting query based on child
+
+--> querySelector --> For selecting first tag of the query
+--> querySelectorAll --> For selecting all tags of the query
+
+// Making sequence of querySelector
+const list = document.querySelector('ul');
+const listItem = list.querySelector('li');
+listItem.style.backgroundColor = "green"
+
+// Query Selector All 
+const tempLiList = document.querySelectorAll('li'); 
+=> here the tempLiList would be a NodeList which is not a proper array and it holds the Nodes of a document
+tempLiList[0].style.backgroundColor = "green";
+// We can obtain a forEach loop on the NodeList
+
+// getElementByClassName
+const classList = document.getElementByClassName('list-item');
+=> It will give us a HTMLCollection which does not have any looping method hence
+const myArr = Array.from(classList);
+=> Now perform looping
