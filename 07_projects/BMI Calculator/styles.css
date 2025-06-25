@@ -31,5 +31,29 @@ body {
 }
 .inputBox{
     padding: 10px;
-    margin: 50px;
+    margin: 5px;
+}
+.lab{
+    margin-right: 10px;
+}
+.inp{
+    margin-left: 20px;
+    padding: 5px;
+    width: 100%
+}
+.calcBut{
+    padding: 10px;
+    border-radius: 10px;
+    color: #212121;
+    font-weight: bold;
+}
+.tabCol{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid white;
+}
+#result{
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
 }

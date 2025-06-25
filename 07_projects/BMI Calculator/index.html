@@ -1,20 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>BMI Generator 😎</title>
 </head>
+
 <body>
     <div class="container">
         <h1 class="mainHead">BMI Calculator</h1>
         <p>Calculate your BMI Index and find out</p>
         <p>how healthy you are</p>
         <form class="weightForm">
-            <div class ="inputBox"><label>Enter Weight(kg):</label><input type="text" name="weight" id="weight" placeholder="Enter Weight"></div>
-            <div class ="inputBox"><label>Enter Height(m):</label><input type="text" name="height" id="height" placeholder="Enter Height"></div>
+            <table class="field">
+                <tr>
+                    <td class="inputBox"><label class="lab">Enter Height(m):</label></td>
+                    <td class="inputBox"><input type="text" name="height" id="height" class="inp"
+                            placeholder="Enter Height"></td>
+                </tr>
+                <tr>
+                    <td class="inputBox"><label class="lab">Enter Weight(kg):</label></td>
+                    <td class="inputBox"><input type="text" name="weight" id="weight" class="inp"
+                            placeholder="Enter Weight"></td>
+                </tr>
+            </table>
         </form>
+        <button class="calcBut">Calculate BMI</button>
+        <div id="result"></div>
     </div>
+    <table>
+        <caption style="font-weight: bold;font-size: 20px;margin-top: 10px;margin-bottom: 20px;">BMI, basic categories
+        </caption>
+        <tbody>
+            <tr>
+                <th class="tabCol" scope="col">Category
+                </th>
+                <th class="tabCol" scope="col">BMI (kg/m<sup>2</sup>)<sup id="cite_ref-range-precision_16-0" class="reference"><a
+                          ><span class="cite-bracket">[</span>c<span
+                                class="cite-bracket">]</span></a></sup>
+                </th>
+                <th class="tabCol" scope="col"><span>BMI Prime</span><sup                          ><span class="cite-bracket">[</span>c<span
+                                class="cite-bracket">]</span></sup>
+                </th>
+            </tr>
+            <tr>
+                <th  class="tabCol" scope="row">Underweight (Severe thinness)
+                </th>
+                <td class="tabCol" >&lt; 16.0
+                </td>
+                <td class="tabCol" >&lt; 0.64
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Underweight (Moderate thinness)
+                </th>
+                <td class="tabCol">16.0–17.0
+                </td>
+                <td class="tabCol">0.64–0.68
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Underweight (Mild thinness)
+                </th>
+                <td class="tabCol">17.0–18.5
+                </td>
+                <td class="tabCol">0.68–0.74
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Normal range
+                </th>
+                <td class="tabCol">18.5–25.0
+                </td>
+                <td class="tabCol">0.74–1.00
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Overweight (Pre-obese)
+                </th>
+                <td class="tabCol">25.0–30.0
+                </td>
+                <td class="tabCol">1.00–1.20
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Obese (Class I)
+                </th>
+                <td class="tabCol">30.0–35.0
+                </td>
+                <td class="tabCol">1.20–1.40
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Obese (Class II)
+                </th>
+                <td class="tabCol">35.0–40.0
+                </td>
+                <td class="tabCol">1.40–1.60
+                </td>
+            </tr>
+            <tr>
+                <th class="tabCol" scope="row">Obese (Class III)
+                </th>
+                <td class="tabCol">≥ 40.0
+                </td>
+                <td class="tabCol">≥ 1.60
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+<script src="index.js"></script>
 </html>
