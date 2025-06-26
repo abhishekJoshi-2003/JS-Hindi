@@ -53,6 +53,15 @@ form.addEventListener('submit', function (e) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+```
 
+## Project 3
 
+```javascript
+const clock = document.getElementById('clock');
+
+setInterval(() => {
+     const date = new Date();
+     clock.innerHTML = date.toLocaleTimeString();
+},1000); // SetInterval make it happen to run every 1000 ms
 ```

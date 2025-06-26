@@ -4,9 +4,9 @@ function handleCalculation(){
     if(w&&h)
     {
         const BMI = w/(h*h);
-        console.log(w);
-        console.log(h);
-        console.log(BMI);
+        // console.log(w);
+        // console.log(h);
+        // console.log(BMI);
         document.querySelector('#result').innerHTML = `Your BMI is ${BMI}`;
     }
     else

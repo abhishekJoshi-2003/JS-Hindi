@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 body {
     background-color: #212121;
     color: #fff;
@@ -11,7 +12,8 @@ body {
     align-items: center;
     margin-top: 10px;
 }
-.container{
+
+.container {
     margin: 5px;
     padding: 10px;
     display: flex;
@@ -19,43 +21,20 @@ body {
     justify-content: center;
     align-items: center;
 }
-.mainHead{
+
+#clock {
+    background-color: orangered;
     font-weight: bold;
-}
-.container p{
-    margin: 2px
-}
-.weightForm{
-    padding: 10px;
-    margin: 30px;
-}
-.inputBox{
-    padding: 10px;
-    margin: 5px;
-}
-.lab{
-    margin-right: 10px;
-}
-.inp{
-    margin-left: 20px;
-    padding: 5px;
-    width: 100%
-}
-.calcBut{
-    padding: 10px;
-    border-radius: 10px;
-    color: #212121;
-    font-weight: bold;
-}
-.tabCol{
-    padding: 10px;
-    text-align: left;
-    border: 1px solid white;
-}
-#result{
     font-size: 20px;
+    height: 50px;
+    width: 150px;
     margin: 20px;
-    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    cursor: pointer;
 }
 .back{
     background-color: #fff;
