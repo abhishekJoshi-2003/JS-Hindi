@@ -47,6 +47,7 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 #pre-guess{
@@ -61,4 +62,14 @@ body {
     margin: 10px;
     display: none;
     text-align: center;
+}
+
+#closure{
+    padding: 10px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }

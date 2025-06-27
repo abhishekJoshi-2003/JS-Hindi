@@ -3,10 +3,14 @@ const btn = document.querySelector('.btn');
 const pre_guess = document.querySelector('#pre-guess');
 const rem_guess = document.querySelector('#rem-guess');
 const msg = document.querySelector('#msg');
+const closure = document.querySelector('#closure');
 let guesses = [];
 let noOfGuess = 10;
 let toBeGuessed = Math.round(Math.random() * 100 + 1);
-btn.addEventListener('click', () => {
+let isGameOn = false;
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
     const val = Number(input.value);
 
     msg.style.display = "none";
@@ -15,8 +19,16 @@ btn.addEventListener('click', () => {
             msg.style.display = "flex";
             msg.innerHTML = "Congratulations! Your guess is right."
             setTimeout(() => {
-                location.reload();
-            }, 5000);
+                input.setAttribute('disabled', '');
+                btn.setAttribute('disabled', '');
+                guesses = [];
+                noOfGuess = 10;
+                isGameOn = false;
+                input.value = '';
+                pre_guess.innerHTML = `Previous Guesses: ${guesses}`;
+                rem_guess.innerHTML = `Guesses remaining: ${noOfGuess}`
+                closure.innerHTML = "Start Game";
+            }, 2000);
         }
         else {
             msg.style.display = "flex";
@@ -27,7 +39,19 @@ btn.addEventListener('click', () => {
         noOfGuess--;
         rem_guess.innerHTML = `Guesses remaining: ${noOfGuess}`
         if (!noOfGuess) {
-            msg.innerHTML = `You are out of guesses<br> The Correct guess was ${toBeGuessed}`;    
+            msg.innerHTML = `You are out of guesses<br> The Correct guess was ${toBeGuessed}`;
+            setTimeout(() => {
+                input.setAttribute('disabled', '');
+                btn.setAttribute('disabled', '');
+                guesses = [];
+                noOfGuess = 10;
+                isGameOn = false;
+                input.value = '';
+                msg.innerHTML = "";
+                pre_guess.innerHTML = `Previous Guesses: ${guesses}`;
+                rem_guess.innerHTML = `Guesses remaining: ${noOfGuess}`
+                closure.innerHTML = "Start Game";
+            }, 2000);
         }
     }
     else {
@@ -41,3 +65,25 @@ btn.addEventListener('click', () => {
         }
     }
 });
+
+closure.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (isGameOn) {
+        input.setAttribute('disabled', '');
+        btn.setAttribute('disabled', '');
+        guesses = [];
+        noOfGuess = 10;
+        isGameOn = false;
+        input.value = '';
+        pre_guess.innerHTML = `Previous Guesses: ${guesses}`;
+        rem_guess.innerHTML = `Guesses remaining: ${noOfGuess}`
+        closure.innerHTML = "Start Game";
+    }
+    else {
+        input.removeAttribute('disabled');
+        btn.removeAttribute('disabled');
+        toBeGuessed = Math.round(Math.random() * 100 + 1);
+        isGameOn = true;
+        closure.innerHTML = "End Game";
+    }
+})
