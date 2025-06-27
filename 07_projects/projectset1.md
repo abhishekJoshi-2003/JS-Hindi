@@ -66,7 +66,7 @@ setInterval(() => {
 },1000); // SetInterval make it happen to run every 1000 ms
 ```
 
-## Projevt 4
+## Project 4
 ```javascript
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
