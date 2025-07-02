@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141;color: aliceblue">
+     <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // All the events in JS run in an orderly manner as JS is a sequentially executed language.
+    // There are some conditions where events chanegs the flaw and the code does breaks the sequential pattern.
+    // using onclick funtion in HTML Element tags is a bad approach as i would become problematic if the app scales so we can do in such a way but it is also a bad approach
+    /* 
+    document.getElementById("owl").onclick = function(){
+        alert("owl");
+    }
+    Insted of onclick we should add eventlisteners as evenlisteners provide more functionalities than onclick
+    */
+
+    // Event is some activity performed using computer such as keyboard presses , mouse clicks , drag and drops and so on
+    // Event Listeners is the best approach for events
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("Owl clicked again");
+    // },false); // it also have third parameter which has default value as false
+
+     // attachEvent() -> used earlier
+     // jQuery -- Famous JS old framework which used function -- on()
+
+     // events properties
+     // type , timestamp , preventDefault
+     // target , toElement , srcElement , currentTarget
+     // clientX , clientY , screenX , screenY
+     // altkey , ctrlkey , shiftkey , keycode
+
+     // The events can be window events as well as browser events
+     // e is the event object that contains all the information about the event such as time stamps , coordinates , height , width and many more
+    //  document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("I am Bubble");
+    // }); // It is event bubbling
+   
+    // Event Propagation -- This is the method how one element can have multiple events in hierachy and how the events are propagated in that hierarchy
+    // Event Propagation -- two types
+    // Event Bubbling -- Mostly used and default for it is false -- In it the events propagation follows bubbling mechanism in which the events make chain from inside element to outside element
+    // Event Capturing -- less used and for it third parameter is true -- In it the event capturing takes place from outer elements to inner elements
+    //  document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("I am Owl");
+    //     e.stopPropagation(); // It will prevent the propagation of event to noxt level
+    // },false); // It is Event Bubbling
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("I am Image");
+    // },true); // It is event capturing
+
+    // preventDefault()
+    document.getElementById('google').addEventListener('click',function(e){
+         e.preventDefault();
+         console.log("Hii I am Google");
+    });
+
+    // To remove element when clicked
+    document.getElementById('images').addEventListener('click',function(e){
+          let myTag = e.target; // e.target gives you the element which has triggered the event and its tagName property gives just the name of the tag instead of complete tag
+          if(myTag.tagName == "IMG")
+          {
+               console.log(myTag.tagName)
+               let tobeRemoved = myTag.parentNode;
+               tobeRemoved.remove(); // It would remove the li 
+              // Other way -- toBeRemoved.parentNode.removeChild(tobeRemved)
+          }
+          else
+          {
+              myTag.remove();
+          }
+    });
+</script>
+</html>
