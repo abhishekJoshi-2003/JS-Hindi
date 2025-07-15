@@ -1,0 +1,6 @@
+Javascript is a Language with these default virtues :-> 1) Synchronous 2) Single Threaded
+
+The Executional Context says that JS code runs line by line hence next part of code waits for previous one's completion.
+
+Blocking Code --> Blocks the flow of program while execution --> Read file Sync
+Non Blocking Code --> Does not block flow of program while execution --> Read file async

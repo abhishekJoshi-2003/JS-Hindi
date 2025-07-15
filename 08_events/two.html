@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Async</title>
+</head>
+
+<body>
+    <h1>Joshi Ji Ka Gyan</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const typeName = function () {
+        console.log("Joshi Ji Ka Gyan")
+    }
+    const timeTaken = setTimeout(typeName, 2000); // This is the browser function for which the call goes to browser. it takes one function as handler and the time in ms and after the time the function is executed once
+
+    const changeText = function () {
+        setInterval(function () {
+            document.querySelector('h1').innerHTML = "My Name is Joshi"
+        }, 2000);
+    }
+
+    // This is the browser function for which the call goes to browser. it takes one function as handler and the time in ms and after the time the function is executed repeatedly after the mentioned time intervsl
+</script>
+
+</html>
