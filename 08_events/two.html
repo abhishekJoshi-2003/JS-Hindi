@@ -18,11 +18,10 @@
     const timeTaken = setTimeout(typeName, 2000); // This is the browser function for which the call goes to browser. it takes one function as handler and the time in ms and after the time the function is executed once
 
     const changeText = function () {
-        setInterval(function () {
-            document.querySelector('h1').innerHTML = "My Name is Joshi"
-        }, 2000);
+        const ele = document.querySelector('h1');
+        ele.innerHTML === "My Name is Joshi" ? ele.
     }
-
+    setInterval(changeText,2000);
     // This is the browser function for which the call goes to browser. it takes one function as handler and the time in ms and after the time the function is executed repeatedly after the mentioned time intervsl
 </script>
 
