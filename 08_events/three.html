@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahman Ka Gyan</title>
+</head>
+<body>
+    <h1>Brahman Ka Gyan</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const typeThing = (str) => {
+        console.log(`Hii ${str}, Now the time is ${Date.now().toLocaleString()}`);
+    } 
+    var myInterval;
+    document.querySelector('#start').addEventListener('click',() => {
+        myInterval = setInterval(typeThing,1000,"Abhishek");// Parameters :- 1) Function Reference 2) Time in ms 3) To be passed in fuction
+    });
+    document.querySelector('#stop').addEventListener('click',() => {
+        clearInterval(myInterval);
+    });
+</script>
+</html>

@@ -16,12 +16,15 @@
         console.log("Joshi Ji Ka Gyan")
     }
     const timeTaken = setTimeout(typeName, 2000); // This is the browser function for which the call goes to browser. it takes one function as handler and the time in ms and after the time the function is executed once
-
     const changeText = function () {
         const ele = document.querySelector('h1');
-        ele.innerHTML === "My Name is Joshi" ? ele.
+        ele.innerHTML = ele.innerHTML === "My Name is Joshi" ? "Joshi Ji Ka Gyan" : "My Name is Joshi";
     }
-    setInterval(changeText,2000);
+    const time = setInterval(changeText,2000);
+    document.querySelector('#stop').addEventListener('click',function(){
+         clearTimeout(timeTaken); //It will clear the timeout
+         clearInterval(time) // It will clear time interval
+    });
     // This is the browser function for which the call goes to browser. it takes one function as handler and the time in ms and after the time the function is executed repeatedly after the mentioned time intervsl
 </script>
 

@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.mainHead{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    gap: 60px;
+    margin: 20px;
+}
+#discoButton{
+    font-size: 20px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    min-width: 10%;
+    cursor: pointer;
+}
+.back{
+    background-color: #fff;
+    color: #212121;
+    padding: 10px;
+    width: 10%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px
+}
