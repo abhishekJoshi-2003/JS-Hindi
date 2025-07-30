@@ -96,6 +96,7 @@ callPromise5();
 // }
 // getAllUsers();
 
+// A fetch reject only shows the error while bringing data... the status code like 404 or others are to be handled in the resolve block
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
     return response.json();
